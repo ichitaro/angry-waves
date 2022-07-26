@@ -63,7 +63,7 @@ export default function createParticlesComputer({
     value: 0.0,
   }
   const uDieSpeed = {
-    value: 0.00125,
+    value: 0.0018,
   }
   const uDieFadeOut = {
     value: 0.01,
@@ -78,7 +78,7 @@ export default function createParticlesComputer({
     value: planeSize,
   }
   const uForceScale = {
-    value: 0.4,
+    value: 0.3,
   }
   const uForceLimit = {
     value: 1.3,
@@ -127,7 +127,7 @@ export default function createParticlesComputer({
       .add(uDieSpeed, 'value')
       .min(0.0002)
       .max(0.01)
-      .step(0.00005)
+      .step(0.0001)
       .name('dieSpeed')
     folder
       .add(uDieFadeOut, 'value')

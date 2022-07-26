@@ -185,7 +185,7 @@ function createLineSegments(
       value: particlesComputer.planeSize,
     },
     uLineScale: {
-      value: 2.9,
+      value: 3,
     },
   }
   const { gui } = new Experience()

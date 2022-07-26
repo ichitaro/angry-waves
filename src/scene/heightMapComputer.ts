@@ -52,7 +52,7 @@ export default function createHeightMapComputer({ size }: Options) {
   heightMapVariable.material.uniforms.uDropStrength = { value: 0.65 }
 
   normalMapVariable.material.uniforms.uHeightScale = {
-    value: 1.0,
+    value: 1,
   }
 
   if (gui) {
@@ -79,7 +79,7 @@ export default function createHeightMapComputer({ size }: Options) {
       .add(normalMapVariable.material.uniforms.uHeightScale, 'value')
       .min(0)
       .max(5)
-      .step(0.0001)
+      .step(0.001)
       .name('heightScale')
   }
 
